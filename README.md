@@ -14,7 +14,7 @@ $ npm install react-seqlogo
 Add a sequence logo to your React application with desired properties:
 
 ```
-import { SequenceLogo } from 'react-seqlogo';
+import SequenceLogo from 'react-seqlogo';
 
 ...
 
