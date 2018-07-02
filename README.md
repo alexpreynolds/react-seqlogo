@@ -11,7 +11,7 @@ In your React project, install the `react-seqlogo` package:
 $ npm install react-seqlogo
 ```
 
-This package is hosted from [NPM](https://www.npmjs.com/package/react-seqlogo).
+This package is hosted from [NPM](https://www.npmjs.com/package/react-seqlogo). Source is available at [Github](https://github.com/alexpreynolds/react-seqlogo).
 
 ## Usage
 
@@ -27,11 +27,17 @@ import SequenceLogo from 'react-seqlogo';
 
 ## Demo
 
-The [react-seqlogo-demo](https://github.com/alexpreynolds/react-seqlogo-demo) repository offers an example of how to deploy this component.
+This project includes a demo frontend that shows how one could use this component:
+
+```
+$ npm run start
+```
+
+Once the server has initialized, open a web browser and visit: http://localhost:8080
 
 ## Properties
 
-These are available properties (and their default values or options) for the main `<SequenceLogo />` component.
+Available properties (and their default values or options) for the main `<SequenceLogo />` component include:
 
 ```
 {
@@ -56,7 +62,7 @@ These are available properties (and their default values or options) for the mai
 
 ## Rendering
 
-At minimum, an `item` is needed to turn into a sequence logo. The `item` property provides the base counts needed to render a logo. 
+At minimum, an `item` is needed to turn into a sequence logo. The `item` property ultimately provides the base counts needed to render a logo, either in the form of raw sequences or letter frequencies.
 
 An `item` may be a structured Javascript object containing FASTA-formatted sequences or a string containing a MEME motif table, depending on the specified `mode`. 
 
@@ -88,7 +94,7 @@ CTCCCGUUGCAAUC
 }
 ```
 
-The `sequences` string is more familiar as the contents of a generic FASTA file. The `identifier` gives the sequences a usable title.
+The `sequences` string is more familiar as the contents of a generic, multiline FASTA file. The `identifier` gives the sequences a usable title.
 
 ### MEME motif
 
@@ -96,6 +102,6 @@ A MEME motif is a string contains metadata describing the item and the letter-pr
 
 ## Issues
 
-At this time, there are still rendering problems with protein sequence logos.
+At this time, there are rendering problems with residues in protein sequence logos.
 
-Also, not all features of [WebLogo 3](http://weblogo.threeplusone.com/) are yet supported. Future versions may offer support for alternate units such as probability density and nats, error bars, logo range subsets and offsets, and background composition correction.
+Also, not all features of [WebLogo 3](http://weblogo.threeplusone.com/) are supported. Future versions may add support for alternate units such as probability density and nats, error bars, logo range subsets and offsets, and background composition correction.
