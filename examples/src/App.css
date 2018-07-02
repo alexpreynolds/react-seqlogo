@@ -1,0 +1,140 @@
+h1, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-body {
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-body {
+  text-align: left;
+}
+
+.App-pane {
+  padding: 20px;
+}
+
+.App-leftPane {
+  background-color: #e5e5e5;
+  overflow: scroll;
+  height: calc(100vh - 160px);
+}
+
+.App-rightPane {
+  background-color: #fff;
+  height: calc(100vh - 160px);;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.App-input-title {
+  margin-bottom: 5px;
+}
+
+.App-input-textarea {
+  margin-top: 5px;
+  width: 96%;
+}
+
+.App-input-button {
+  margin-bottom: 10px;
+}
+
+.App-input-select {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.App-input-submit {
+  font-size: large;
+  margin-top: 15px;
+  width: 100%;
+}
+
+input {
+  width: 96%;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Resizer {
+  background: #000;
+  opacity: .2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  border-top: 5px solid rgba(255, 255, 255, 0);
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  cursor: row-resize;
+  width: 100%;
+}
+
+.Resizer.horizontal:hover {
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 0px;
+  border-left: 5px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
