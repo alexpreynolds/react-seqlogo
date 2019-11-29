@@ -43,7 +43,17 @@ Available properties (and their default values or options) for the main `<Sequen
 {
   title           : '',
   mode            : 'FASTA' | 'MEMEMotif',
-  colorScheme     : 'base_pairing' | 'charge' | 'chemistry' | 'classic' | 'epilogos-15state-human' | 'hydrophobicity' | 'nucleotide' | 'taylor',
+  colorScheme     : 'base_pairing' |
+                    'charge' | 
+                    'chemistry' | 
+                    'classic' | 
+                    'epilogos-15state-human' | 
+                    'epilogos-18state-human' | 
+                    'epilogos-25state-human' | 
+                    'epilogos-15state-mouse' | 
+                    'hydrophobicity' | 
+                    'nucleotide' | 
+                    'taylor',
   item            : {} | '',
   type            : 'nucleotide' | 'protein' | 'epilogos',
   yAxisTicks      : 2,
